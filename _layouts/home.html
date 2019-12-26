@@ -3,12 +3,12 @@
 
 {% include head.html %}
 
-<body>
+<body class="{% if page.dark %} dark {% endif %}">
 
   {% include navbar.html %}
 
   <div id="divheading">
-    <div id="heading">
+    <div id="heading" class="{%if page.dark %} lightheading {%endif%}">
       <h1>Giacomo</h1>
       <h1>Schiavo</h1>
     </div>
@@ -17,23 +17,31 @@
   <div id="divbody">
     <div class="horizontal" id="divpost">
       <h2>latest post</h2>
+      <!-- <a href="{{site.data.navigation[1].link}}">view all</a> -->
       <div class="horscroll">
         {% for post in site.posts %}
-        <div class="window">
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {% if post.type == "blog" %}
+        <div class="window {% if page.dark %} lightwindow {% endif %}">
+          <h2>{{ post.title }}</h2>
           <p>{{ post.excerpt }}</p>
+          <div class="divlink"><a href="{{post.url}}">read more</a></div>
         </div>
+        {%endif%}
         {% endfor %}
       </div>
     </div>
     <div class="horizontal" id="divproject">
       <h2>latest projects</h2>
+      <!-- <a href="{{site.data.navigation[2].link}}">view all</a> -->
       <div class="horscroll">
         {% for post in site.posts %}
-        <div class="window">
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {% if post.type == "projects" %}
+        <div class="window {% if page.dark %} lightwindow {% endif %}">
+          <h2>{{ post.title }}</h2>
           <p>{{ post.excerpt }}</p>
+          <div class="divlink"><a href="{{post.url}}">read more</a></div>
         </div>
+        {%endif%}
         {% endfor %}
       </div>
     </div>

@@ -1,6 +1,17 @@
-<div id="divnavbar">
-  <i class="material-icons">menu</i>
-  <a href="#">projects</a>
-  <a href="#">blog</a>
-  <a href="#">home</a>
+<div id="divnavbar" {% if page.dark %} class="darknavbar" {% endif %}">
+  <i class="material-icons {% if page.dark %} lightbulb {% endif %}" id="bulb"
+    onclick="darktoggle()">wb_incandescent</i>
+  <i class="minvisible material-icons">menu</i>
+  <div id="divlinks">
+    {% for item in site.data.navigation %}
+    <a class="{% if page.url == item.link %} currentlink {% endif %}{% if page.dark %} lightlink {% endif %}"
+      href="{{item.link}}">{{item.name}}</a>
+    {%endfor%}
+  </div>
 </div>
+
+<script>
+  function darktoggle() {
+
+  }
+</script>

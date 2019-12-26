@@ -1,0 +1,60 @@
+
+#divnavbar {
+    background-color: $white;
+    padding: 20px 0;
+    font-family: "Ubuntu";
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    text-align: left;
+}
+
+#divlinks {
+    margin: auto 0 auto auto;
+    display: inline;
+    // padding: 20px 20px;
+    float: right;
+}
+
+#divnavbar  a {
+    display: inline;
+    margin: 0 20px;
+    color: $grey;
+    text-decoration: none;
+    padding: 5px;
+    user-select: none;
+}
+
+.currentlink {
+  color: $grey !important;
+}
+
+#divnavbar .minvisible{
+    display: none;
+    margin: 0 30px;
+    float: right; 
+    font-size: 30px;
+}
+
+
+#bulb {
+    display: inline;
+    cursor: pointer;
+    padding: 20px;
+    background-color: $black;
+    color: $white;
+}
+
+.darknavbar {
+    background-color: $black !important;
+}
+
+.lightbulb {
+    color: $black !important;
+    background-color: $white !important;
+}
+
+.lightlink {
+    color: $white !important;
+}

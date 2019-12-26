@@ -1,0 +1,115 @@
+#divheading {
+    height: 100%;
+    min-height: 100%; 
+    position: relative;
+}
+
+#divheading:hover #heading{
+
+}
+
+#heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3vw;
+    color: $black;
+}
+
+.lightheading {
+    color: $white !important;
+}
+
+#heading > h1 {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 5px;
+    user-select: none;
+}
+
+
+#divbody {
+    display: flex;
+    flex-flow: column;
+    margin: 20px 0;
+    /* justify-content: space-evenly; */
+}
+
+.horizontal {
+    padding: 20px 0;
+}
+
+.horizontal > a {
+    float: right;
+}
+
+.horscroll {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    margin-left: -10%;
+}
+
+.window {
+    min-width: 20%;
+    margin: 10px 30px;
+    border-radius: 20px;
+    background: $black;
+    padding: 10px 30px;
+    box-shadow: 0 0 10px $grey;
+    color: $white;
+    transition: 1s;
+}
+
+.window:hover {
+    transition: 0.5s;
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: $black;
+    background-color: $white;
+    position: relative;
+}
+
+.window:first-child {
+    margin-left: 15%;
+}
+
+.window:last-child {
+    margin-right: 50px;
+}
+
+.lightwindow {
+    color: $black;
+    background-color: $white !important;
+}
+
+.horizontal > h2 {
+    margin-left: 5%;
+    font-family: "Ubuntu";
+    letter-spacing: 1px;
+    color: $grey;
+}
+
+.horizontal:first-child {
+    margin-bottom: 50px;
+}
+
+.divlink {
+    text-align: right;
+    padding: 10px;
+}
+
+.window a {
+    transition: 1s;
+    text-decoration: none;
+    font-family: "Ubuntu";
+    color: $grey;
+}
+
+.window a:hover {
+    color: $grey;
+    transition: 0.4s;
+}
