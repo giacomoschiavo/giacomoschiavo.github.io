@@ -1,0 +1,196 @@
+/**
+white: #F6F6F4
+subfont: #1A1B1F
+font: #595761
+*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #F6F6F4;
+    color: #595761;
+    font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
+    /* background: linear-gradient(179deg, #f6f6f4, #cacac8); */
+    background-size: 4000% 4000%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+
+#divnavbar {
+    background-color: #F6F6F4;
+    padding: 20px 0;
+    color: #1A1B1F;
+    font-family: "Ubuntu";
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#divnavbar > a {
+    float: right;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #595761;
+    background: #F6F6F4;
+    padding: 5px;
+}
+
+#divnavbar i {
+    display: none;
+    margin: 0 30px;
+    float: right; 
+    font-size: 30px;
+}
+
+#divnavbar:hover a{
+    display: block;
+}
+
+#divheading {
+    height: 100%;
+    min-height: 100%; 
+    position: relative;
+}
+
+#heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3vw;
+    color: #1A1B1F;
+}
+
+#heading > h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+#divbody {
+    display: flex;
+    flex-flow: column;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* justify-content: space-evenly; */
+}
+
+.horizontal {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.horscroll {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto; 
+    margin-left: -10%;
+}
+
+.window {
+    min-width: 20%;
+    margin: 10px 30px;
+    border-radius: 20px;
+    background: #F6F6F4;
+    padding: 10px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #1A1B1F;
+}
+
+.horizontal > h2 {
+    margin-left: 5%;
+    font-family: "Ubuntu";
+    letter-spacing: 1px;
+}
+
+.horizontal:first-child {
+    margin-bottom: 50px;
+}
+
+
+#divfooter {
+    background-color: #595761;
+    color: #F6F6F4;
+    margin-top: 50px;
+    padding: 50px 30px;
+}
+
+.window:first-child {
+    margin-left: 15%;
+}
+
+.window:last-child {
+    margin-right: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #595761;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 0;
+}
+
+@media screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 12vw;
+    }
+
+    .window {
+        min-width: 50%;
+        margin: 10px 30px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 10px 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #divnavbar a {
+        display: none;
+    }
+
+    #divnavbar i {
+        display: block;
+    }
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}

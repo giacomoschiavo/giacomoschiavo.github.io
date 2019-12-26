@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+  {% include navbar.html %}
+
+  <div id="divheading">
+    <div id="heading">
+      <h1>Giacomo</h1>
+      <h1>Schiavo</h1>
+    </div>
+  </div>
+
+  <div id="divbody">
+    <div class="horizontal" id="divpost">
+      <h2>latest post</h2>
+      <div class="horscroll">
+        {% for post in site.posts %}
+        <div class="window">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.excerpt }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="horizontal" id="divproject">
+      <h2>latest projects</h2>
+      <div class="horscroll">
+        {% for post in site.posts %}
+        <div class="window">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.excerpt }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+
+</body>
+
+</html>
