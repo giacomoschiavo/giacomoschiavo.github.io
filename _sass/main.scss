@@ -6,6 +6,10 @@ $grey: #595761;
 @import "navbar";
 @import "scrollbar";
 
+html * {
+  transition: 0.3s;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -20,10 +24,24 @@ body {
 }
 
 .dark {
+    color: $white;
+    background-color: $black;
+}
+
+.light {
+    color: $black;
+    background-color: $white;
+}
+
+.darkmode {
     color: $white !important;
     background-color: $black !important;
 }
 
+.lightmode {
+    color: $black !important;
+    background-color: $white !important;
+}
 
 #divfooter {
     color: $grey;
@@ -31,13 +49,6 @@ body {
     padding: 30px;
     background-color: $black;
 }
-
-.lightfooter {
-    background-color: $white !important;
-}
-
-
-
 
 @media screen and (max-width: 700px) {
     h1 {
