@@ -1,7 +1,6 @@
 
 #divnavbar {
-    background-color: $white;
-    padding: 20px 0;
+    // padding: 20px 0;
     font-family: "Ubuntu";
     position: fixed;
     top: 0;
@@ -10,11 +9,10 @@
     text-align: left;
 }
 
-#divlinks {
+#menu {
     margin: auto 0 auto auto;
-    // display: inline;
-    // padding: 20px 20px;
-    float: right;
+    text-align: right;
+    margin: 23px 0;
 }
 
 #divnavbar  a {
@@ -33,26 +31,45 @@
 #divnavbar .minvisible{
     display: none;
     margin: 0 30px;
-    float: right;
+    text-align: right;
+    // float: right;
     font-size: 30px;
 }
 
 
 #bulb {
-    display: inline;
+    float: left;
     cursor: pointer;
     padding: 20px;
 }
 
-.darknavbar {
-    background-color: $black !important;
-}
+@media screen and (max-width: 700px) {
+    #divnavbar .minvisible{
+        display: block;
+    }
 
-.lightbulb {
-    color: $black !important;
-    background-color: $white !important;
-}
+    #divlinks {
+      display: none;
+    }
 
-.lightlink {
-    color: $white !important;
+    #divlinks a{
+      margin: 10px 0;
+    }
+
+    #divlinks {
+        // display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    #menu {
+        margin: auto 0 auto auto;
+        text-align: center;
+        margin: 16px 0 0 0;
+    }
+
+    #menu:hover #divlinks {
+        display: flex;
+        text-decoration: underline;
+    }
 }

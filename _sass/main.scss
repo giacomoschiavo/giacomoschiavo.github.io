@@ -63,24 +63,4 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    #divnavbar .minvisible{
-        display: block;
-    }
-
-    #divlinks {
-      display: none;
-      margin: 20px 0 0 0 ;
-      text-align: center;
-      text-decoration: underline;
-    }
-
-    #divlinks a{
-      margin: 10px 0;
-    }
-
-    #divnavbar:hover #divlinks{
-        display: flex;
-        flex-flow: column;
-        width: 100%;
-    }
 }
