@@ -1,0 +1,53 @@
+html, body {
+  min-height: 100%;
+}
+
+#divpost {
+  font-size: 1vw;
+  width: 70%;
+  margin: auto;
+}
+
+#thumbnail {
+  padding-top: 40px;
+  width: 100%;
+  filter: grayscale(0.2);
+}
+
+#divcontent {
+
+}
+
+.progress-cont{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: $black;
+  z-index: 2;
+}
+
+.progress-bar{
+  height: 5px;
+  background: $grey;
+  width: 0%;
+  border-radius: 0 20px 20px 0;
+}
+
+#disqus_thread{
+  width: 90%;
+  margin: 10px auto;
+}
+
+#disqus_thread *{
+  color: $white;
+}
+
+@media screen and (max-width: 700px) {
+  #divpost {
+    font-size: 5vw;
+    width: 90%;
+    margin: auto;
+  }
+
+}

@@ -15,7 +15,7 @@
   </div>
 
   <div id="divbody">
-    <div class="horizontal" id="divpost">
+    <div class="horizontal">
       <h2>latest post</h2>
       <!-- <a href="{{site.data.navigation[1].link}}">view all</a> -->
       <div class="horscroll">
@@ -30,7 +30,7 @@
         {% endfor %}
       </div>
     </div>
-    <div class="horizontal" id="divproject">
+    <div class="horizontal">
       <h2>latest projects</h2>
       <!-- <a href="{{site.data.navigation[2].link}}">view all</a> -->
       <div class="horscroll">
@@ -49,12 +49,6 @@
 
   {% include footer.html %}
 
-  <script>
-    function darkToggle() {
-      $(".light").toggleClass("darkmode");
-      $(".dark").toggleClass("lightmode");
-    }
-  </script>
 </body>
 
 </html>

@@ -5,6 +5,8 @@ $grey: #595761;
 @import "home";
 @import "navbar";
 @import "scrollbar";
+@import "footer";
+@import "post";
 
 html * {
   transition: 0.3s;
@@ -41,13 +43,6 @@ body {
 .lightmode {
     color: $black !important;
     background-color: $white !important;
-}
-
-#divfooter {
-    color: $white;
-    margin-top: 50px;
-    padding: 30px;
-    background-color: $grey;
 }
 
 @media screen and (max-width: 700px) {

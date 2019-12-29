@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="light">
+  <div class="progress-cont qdark">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  {% include navbar.html %}
+  <div id="divpost">
+    {% if page.thumbnail %}<img id="thumbnail" src="{{page.thumbnail}}" alt="thumbnail">{%endif%}
+    <h1>{{page.title}}</h1>
+    <div id="divcontent">
+      {{content}}
+    </div>
+  </div>
+
+    <div id="disqus_thread"></div>
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      let post = document.getElementById("divpost");
+      let comments = document.getElementById("disqus_thread");
+      function myFunction() {
+        var winScroll = post.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight - comments.clientHeight - document.getElementById("divfooter").clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+
+    // var disqus_config = function () {
+    //   this.page.url = "giacomoschiavo.github.io";
+    //   this.page.identifier = "swdefe";
+    // };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://giacomoschiavo-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
