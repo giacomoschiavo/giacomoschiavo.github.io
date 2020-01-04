@@ -1,12 +1,14 @@
 $white: #F6F6F4;
 $black: #1a1b1f;
-$grey: #595761;
+$grey: #6B6A6A;
 
 @import "home";
 @import "navbar";
 @import "scrollbar";
 @import "footer";
 @import "post";
+@import "blog";
+
 
 html * {
   transition: 0.3s;

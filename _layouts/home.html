@@ -9,19 +9,18 @@
 
   <div id="divheading">
     <div id="heading" class="light">
-      <h1>Giacomo</h1>
-      <h1>Schiavo</h1>
+      <h1>Non ho fantasia per un titolo migliore</h1>
+      <sub>(Spoiler: non è vero)</sub>
     </div>
   </div>
 
   <div id="divbody">
     <div class="horizontal">
       <h2>latest post</h2>
-      <!-- <a href="{{site.data.navigation[1].link}}">view all</a> -->
       <div class="horscroll">
         {% for post in site.posts %}
         {% if post.type == "blog" %}
-        <div class="window dark">
+        <div class="window light">
           <h2>{{ post.title }}</h2>
           <p>{{ post.excerpt }}</p>
           <div class="divlink"><a href="{{post.url}}">read more</a></div>

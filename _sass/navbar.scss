@@ -1,12 +1,16 @@
-
 #divnavbar {
     // padding: 20px 0;
     font-family: "Ubuntu";
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 2;
     text-align: left;
+    border: 1px solid red;
+}
+
+#divnavbar * {
+  user-select: none;
 }
 
 #menu {
@@ -41,7 +45,13 @@
     float: left;
     cursor: pointer;
     padding: 20px;
+    background: transparent !important;
 }
+
+#bulb {
+
+}
+
 
 @media screen and (max-width: 700px) {
     #divnavbar .minvisible{

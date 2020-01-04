@@ -1,29 +1,26 @@
 #divheading {
-    height: 100%;
-    min-height: 100%;
-    position: relative;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
 }
 
 #heading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 3vw;
-    color: $black;
-}
-
-.lightheading {
-    color: $white !important;
-    background-color: $black !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3vw;
+  color: $black;
 }
 
 #heading > h1 {
-    padding: 0;
-    margin: 0;
-    letter-spacing: 5px;
-    user-select: none;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 5px;
+  user-select: none;
+  text-align: center;
+    // transform: rotate(-30deg);
 }
 
 
@@ -53,18 +50,18 @@
 .window {
     min-width: 20%;
     margin: 10px 30px;
-    border-radius: 20px;
-    border: 1px solid $white;
+    border-radius: 10px;
+    border: 0.5px solid $grey;
     background: $black;
     padding: 10px 30px;
-    box-shadow: 0 0 10px $grey;
+    // box-shadow: 0 0 10px $grey;
     color: $white;
     transition: 1s;
 }
 
 .window:hover {
     transition: 0.5s;
-    transform: scale(1.01);
+    transform: scale(1.05);
     box-shadow: 0 0 10px r  gba(0, 0, 0, 0.1);
     position: relative;
 }
@@ -77,10 +74,15 @@
     margin-right: 50px;
 }
 
+.window p {
+  font-family: "Gelasio", sans-serif;
+}
+
 .horizontal > h2 {
     margin-left: 5%;
     font-family: "Ubuntu";
     letter-spacing: 1px;
+    background: transparent !important;
     color: $grey;
 }
 
