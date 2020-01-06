@@ -1,5 +1,6 @@
 ---
 layout: archive
-title: Projects Archive
+title: Projects
 posttype: projects
+heading: "Progetti"
 ---

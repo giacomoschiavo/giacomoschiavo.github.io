@@ -4,16 +4,20 @@
 
 <body>
   {% include navbar.html %}
+  {% include heading.html title="Blog" %}
+
   <div class="postlist">
     {% for post in site.posts %}
     {%if page.posttype == post.type %}
     <div class="postlistitem">
       <h2>{{post.title}}</h2>
       <p>{{post.excerpt}}</p>
+      <a href="{{post.url}}">Leggi ora</a>
     </div>
     {%endif%}
     {%endfor%}
   </div>
+
 </body>
 
 </html>

@@ -9,9 +9,8 @@
   </div>
 
   {% include navbar.html %}
-  {% if page.thumbnail %}<img id="thumbnail" src="{{page.thumbnail}}" alt="thumbnail">{%endif%}
+  {% include heading.html title=page.title bg=page.thumbnail %}
   <div id="divpost">
-    <h1 class="posttitle">{{page.title}}</h1>
     <div id="divcontent">
       {{content}}
     </div>

@@ -1,11 +1,12 @@
 #divnavbar {
-    // padding: 20px 0;
-    font-family: "Ubuntu";
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    text-align: left;
+  // padding: 20px 0;
+  font-family: "Ubuntu";
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  text-align: left;
+  box-shadow: -5px 0 1px $grey;
 }
 
 #divnavbar * {
@@ -13,18 +14,18 @@
 }
 
 #menu {
-    margin: auto 0 auto auto;
-    text-align: right;
-    margin: 23px 0;
+  margin: auto 0 auto auto;
+  text-align: right;
+  margin: 23px 0;
 }
 
 #divnavbar  a {
-    display: inline;
-    margin: 0 20px;
-    color: $grey;
-    text-decoration: none;
-    padding: 5px;
-    user-select: none;
+  display: inline;
+  margin: 0 20px;
+  color: $grey;
+  text-decoration: none;
+  padding: 5px;
+  user-select: none;
 }
 
 .currentlink {
@@ -32,19 +33,19 @@
 }
 
 #divnavbar .minvisible{
-    display: none;
-    margin: 0 30px;
-    text-align: right;
-    // float: right;
-    font-size: 30px;
+  display: none;
+  margin: 0 30px;
+  text-align: right;
+  // float: right;
+  font-size: 30px;
 }
 
 
 #bulb {
-    float: left;
-    cursor: pointer;
-    padding: 20px;
-    background: transparent !important;
+  float: left;
+  cursor: pointer;
+  padding: 20px;
+  background: transparent !important;
 }
 
 #bulb {
@@ -53,32 +54,32 @@
 
 
 @media screen and (max-width: 700px) {
-    #divnavbar .minvisible{
-        display: block;
-    }
+  #divnavbar .minvisible{
+      display: block;
+  }
 
-    #divlinks {
-      display: none;
-    }
+  #divlinks {
+    display: none;
+  }
 
-    #divlinks a{
-      margin: 10px 0;
-    }
+  #divlinks a{
+    margin: 10px 0;
+  }
 
-    #divlinks {
-        // display: flex;
-        flex-flow: column;
-        width: 100%;
-    }
+  #divlinks {
+    // display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
 
-    #menu {
-        margin: auto 0 auto auto;
-        text-align: center;
-        margin: 16px 0 0 0;
-    }
+  #menu {
+    margin: auto 0 auto auto;
+    text-align: center;
+    margin: 16px 0 0 0;
+  }
 
-    #menu:hover #divlinks {
-        display: flex;
-        text-decoration: underline;
-    }
+  #menu:hover #divlinks {
+    display: flex;
+    text-decoration: underline;
+  }
 }

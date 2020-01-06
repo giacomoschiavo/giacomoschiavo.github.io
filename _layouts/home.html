@@ -7,43 +7,11 @@
 
   {% include navbar.html %}
 
-  <div id="divheading">
-    <div id="heading" class="light">
-      <h1>Non ho fantasia per un titolo migliore</h1>
-      <sub>(Spoiler: non è vero)</sub>
-    </div>
-  </div>
+  {% include heading.html title="Home" %}
 
   <div id="divbody">
-    <div class="horizontal">
-      <h2>latest post</h2>
-      <div class="horscroll">
-        {% for post in site.posts %}
-        {% if post.type == "blog" %}
-        <div class="window light">
-          <h2>{{ post.title }}</h2>
-          <p>{{ post.excerpt }}</p>
-          <div class="divlink"><a href="{{post.url}}">read more</a></div>
-        </div>
-        {%endif%}
-        {% endfor %}
-      </div>
-    </div>
-    <div class="horizontal">
-      <h2>latest projects</h2>
-      <!-- <a href="{{site.data.navigation[2].link}}">view all</a> -->
-      <div class="horscroll">
-        {% for post in site.posts %}
-        {% if post.type == "projects" %}
-        <div class="window light">
-          <h2>{{ post.title }}</h2>
-          <p>{{ post.excerpt }}</p>
-          <div class="divlink"><a href="{{post.url}}">read more</a></div>
-        </div>
-        {%endif%}
-        {% endfor %}
-      </div>
-    </div>
+    {% include postscroll.html type="blog" title="Ultimi post"%}
+    {% include postscroll.html type="projects" title="Ultimi progetti"%}
   </div>
 
   {% include footer.html %}
