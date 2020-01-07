@@ -1,9 +1,8 @@
 #divfooter {
-  // color: $white;
   margin-top: 50px;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.01);
   text-align: center;
+  box-shadow: 0 5px 10px $grey;
 }
 
 .socialspace {
@@ -21,11 +20,11 @@
 .socialspace img {
   max-width: 50px;
   // filter: invert(1);
+  filter: invert(0.5);
 }
 
 .socialspace img:hover {
   transition: 0.1s;
-  // filter: invert(0) drop-shadow(0 0 1px $white);
   transform: scale(1.1);
 }
 

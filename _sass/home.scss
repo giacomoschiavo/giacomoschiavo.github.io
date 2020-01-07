@@ -51,7 +51,7 @@
   flex-flow: row nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  margin-left: -10%;
+  margin-left: -15%;
 }
 
 .window {
@@ -61,9 +61,8 @@
   box-shadow: 0 0 5px $grey;
   background: $black;
   padding: 10px 30px;
-  // box-shadow: 0 0 10px $grey;
-  color: $white;
-  // transition: 1s;
+  // color: $white;
+  margin-right: 0;
 }
 
 .window:hover {
@@ -113,4 +112,14 @@
 
 .window a:hover {
   transition: 0.4s;
+}
+
+@media screen and (max-width: 700px) {
+  .window {
+    min-width: 60%;
+    margin: 10px 10px;
+    border-radius: 20px;
+    padding: 10px 30px;
+  }
+
 }

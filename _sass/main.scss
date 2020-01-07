@@ -1,6 +1,6 @@
 $white: #F6F6F4;
-$black: #1a1b1f;
-$grey: #6B6A6A;
+$black: #1f1f21;
+$grey: #464648;
 
 @import "home";
 @import "navbar";
@@ -50,14 +50,6 @@ body {
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 12vw;
-  }
-
-  .window {
-    min-width: 50%;
-    margin: 10px 30px;
-    border-radius: 20px;
-    padding: 10px 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
   .headingbg {
