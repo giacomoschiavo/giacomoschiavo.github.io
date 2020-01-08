@@ -3,15 +3,15 @@
   <div class="horscroll">
     {% for post in site.posts %}
     {% if post.type == {{include.type}} %}
-    <div class="window light">
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.excerpt }}</p>
-      <hr>
+    <div class="window dark">
+      {% if post.thumbnail %}<img src="{{post.thumbnail}}">{% endif %}
+      <h2 {% if post.thumbnail%}style="color: #F6F6F4"{% endif %}>{{ post.title }}</h2>
       <div class="divlink light">
         <a class="light" href="{{post.url}}">Leggi</a>
       </div>
     </div>
     {% endif %}
     {% endfor %}
+    <div style="visibility: hidden; min-width: 20px;"></div>
   </div>
 </div>
