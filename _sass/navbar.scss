@@ -6,7 +6,7 @@
   width: 100%;
   z-index: 2;
   text-align: left;
-  box-shadow: -5px 0 1px $grey;
+  // box-shadow: -5px 0 1px $special;
 }
 
 #divnavbar * {
@@ -22,14 +22,17 @@
 #divnavbar  a {
   display: inline;
   margin: 0 20px;
-  color: $grey;
+  // color: $special;
   text-decoration: none;
   padding: 5px;
   user-select: none;
+  padding-bottom: 10px;
+  // color: $white;
 }
 
 .currentlink {
-  color: $grey !important;
+  color: $white !important;
+  border-bottom: 3px solid $white;
 }
 
 #divnavbar .minvisible{
@@ -41,35 +44,38 @@
 }
 
 
+
 #bulb {
   float: left;
   cursor: pointer;
   padding: 20px;
-  background: transparent !important;
-}
-
-#bulb {
-
+  color: $white !important;
+  // background: $special !important;
 }
 
 
 @media screen and (max-width: 700px) {
   #divnavbar .minvisible{
-      display: block;
+    display: block;
   }
+
+  // .minvisible{
+  //   display: block;
+  // }
 
   #divlinks {
     display: none;
   }
 
   #divlinks a{
-    margin: 10px 0;
+    margin: 10px 30%;
   }
 
   #divlinks {
-    // display: flex;
+    text-align: center;
     flex-flow: column;
     width: 100%;
+    margin: auto;
   }
 
   #menu {
@@ -80,6 +86,6 @@
 
   #menu:hover #divlinks {
     display: flex;
-    text-decoration: underline;
+    // text-decoration: underline;
   }
 }

@@ -1,58 +1,50 @@
+// https://coolors.co/f6f6f4-e8eaea-48ff96-1f1f21-323235
 $white: #F6F6F4;
 $black: #1f1f21;
-$grey: #464648;
+$special: #526889;
 
 @import "home";
 @import "navbar";
 @import "scrollbar";
 @import "footer";
-@import "post";
 @import "heading";
 @import "archive";
+@import "post";
+@import "window";
 
 html * {
   transition: 0.3s;
 }
 
 html, body {
-    height: 100%;
-    margin: 0;
-    scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-    color: $grey;
-    font-family: "Raleway", sans-serif;
-    overflow-x: hidden;
-    background-color: $white;
+  color: $special;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+  background-color: $white;
 }
 
 .dark {
-    color: $white;
+    color: $special;
     background-color: $black;
 }
 
 .light {
     color: $black;
-    background-color: $white;
+    background-color: $special;
 }
 
 .darkmode {
-    color: $white !important;
+    color: $special !important;
     background-color: $black !important;
 }
 
 .lightmode {
     color: $black !important;
-    background-color: $white !important;
-}
-
-@media screen and (max-width: 700px) {
-  h1 {
-    font-size: 12vw;
-  }
-
-  .headingbg {
-    height: 100%;
-  }
+    background-color: $special !important;
 }

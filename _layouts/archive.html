@@ -6,19 +6,8 @@
   {% include navbar.html %}
   {% include heading.html title=page.heading %}
 
-  <div class="postlist">
-    {% for post in site.posts %}
-    {%if page.posttype == post.type %}
-    <div class="postlistitem dark">
-      <h2>{{post.title}}</h2>
-      <p>{{post.excerpt}}</p>
-      <hr>
-      <div class="postlink light">
-        <a class="light" href="{{post.url}}">Leggi ora</a>
-      </div>
-    </div>
-    {%endif%}
-    {%endfor%}
+  {% include postscroll.html type=page.posttype %}
+
   </div>
 
   {% include footer.html %}

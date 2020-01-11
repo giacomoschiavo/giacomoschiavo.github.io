@@ -1,0 +1,110 @@
+
+.window {
+  position: relative;
+  min-width: 22%;
+  max-width: 22%;
+  margin: 10px 30px;
+  margin-right: 0;
+  min-height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.window, .window img {
+  border-radius: 10px;
+  filter: blur(0.8);
+}
+
+.window:hover {
+  transform: scale(1.05);
+  // box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.window:hover > h2, .window:hover > i {
+  opacity: 0;
+}
+
+.window:hover > .postexcerpt {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.window:hover img {
+  filter: brightness(0.1);
+}
+
+.window:first-child {
+  margin-left: 15%;
+}
+
+.window:last-child {
+  margin-right: 50px;
+}
+
+.window > h2 {
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.window img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.6);
+  object-fit: cover;
+}
+
+.window > i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  color: $white;
+}
+
+.window > .postexcerpt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+  width: 90%;
+  opacity: 0;
+  background: transparent;
+  color: $white;
+}
+
+.window > .postexcerpt h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.window a {
+  color: $white;
+  transition: 1s;
+  text-decoration: none;
+  font-family: "Ubuntu";
+}
+
+.window a:hover {
+  transition: 0.4s;
+}
+
+
+@media screen and (max-width: 700px) {
+  .window {
+    min-width: 65%;
+    margin: 10px 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .window:first-child {
+    margin-left: 20%;
+  }
+
+
+
+}
