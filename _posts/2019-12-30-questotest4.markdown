@@ -5,7 +5,6 @@ date:   2019-12-26 09:56:29 +0100
 categories: jekyll update
 type: blog
 comments: true
-thumbnail: https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
 

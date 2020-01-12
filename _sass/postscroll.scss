@@ -20,6 +20,10 @@
   margin-right: 50px;
 }
 
+.horizontal > h2 {
+  // color: $white !important;
+}
+
 @media screen and (max-width: 700px) {
   .horscroll .window {
     min-width: 65%;

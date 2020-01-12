@@ -2,6 +2,7 @@
 layout: post
 title:  Oh mio dio, un altro test!
 date:   2019-10-15 09:56:29 +0100
+thumbnail: https://www.bibibi.it/wp-content/uploads/2018/09/scarica-immagini-ad-alta-qualita.jpeg
 categories: jekyll update
 type: projects
 ---
