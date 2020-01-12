@@ -6,8 +6,12 @@
   {% include navbar.html %}
   {% include heading.html title=page.heading %}
 
-  {% include postscroll.html type=page.posttype %}
-
+  <div class="postlist">
+    {% for post in site.posts %}
+    {%if page.posttype == post.type %}
+      {% include window.html %}
+    {%endif%}
+    {%endfor%}
   </div>
 
   {% include footer.html %}
