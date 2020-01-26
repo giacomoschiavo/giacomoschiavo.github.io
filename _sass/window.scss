@@ -28,7 +28,7 @@
 }
 
 .window > h2 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Nunito", sans-serif;
   position: absolute;
   width: 90%;
   top: 50%;
@@ -61,7 +61,8 @@
   width: 90%;
   opacity: 0;
   background: transparent;
-  color: $white;
+  font-family: "Nunito";
+  // color: $white;
 }
 
 .window > .postexcerpt h2 {
@@ -70,10 +71,11 @@
 }
 
 .window a {
-  color: $white;
+  // color: $white;
+  background: transparent !important;
   transition: 1s;
   text-decoration: none;
-  font-family: "Ubuntu";
+  font-family: "Nunito";
 }
 
 .window a:hover {

@@ -1,12 +1,14 @@
 #divnavbar {
   // padding: 20px 0;
-  font-family: "Ubuntu";
+  font-family: "Nunito";
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
+  letter-spacing: 1px;
   text-align: left;
-  // box-shadow: -5px 0 1px $special;
+  // opacity: 0.8;
+  // box-shadow: -5px 0 1px $white;
 }
 
 #divnavbar * {
@@ -20,20 +22,25 @@
 }
 
 #divnavbar  a {
+  transition: 0.2s;
   display: inline;
   margin: 0 20px;
-  // color: $special;
   text-decoration: none;
   padding: 5px;
   user-select: none;
   padding-bottom: 10px;
-  border-radius: 5px;
-  // color: $white;
+  border-bottom: 3px solid transparent;
+}
+
+#divnavbar  a:hover {
+  transition: 0.1s;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.6);
 }
 
 .currentlink {
-  color: $white !important;
-  border-bottom: 3px solid $white;
+  color: $special !important;
+  border-bottom: 3px solid $special !important;
+  border-radius: 0px !important;
 }
 
 #divnavbar .minvisible{
@@ -44,14 +51,14 @@
   font-size: 30px;
 }
 
-
-
 #bulb {
   float: left;
   cursor: pointer;
   padding: 20px;
-  color: $white !important;
-  // background: $special !important;
+}
+
+#bulb:hover {
+  filter: invert(0.8);
 }
 
 
