@@ -1,12 +1,12 @@
 
 .window {
   position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px -9px rgba(0,0,0,0.32);
 }
 
 .window, .window img {
   border-radius: 10px;
-  filter: blur(0.8);
+  filter: grayscale(1);
 }
 
 .window:hover {

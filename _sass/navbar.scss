@@ -28,13 +28,13 @@
   text-decoration: none;
   padding: 5px;
   user-select: none;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom: 3px solid transparent;
 }
 
 #divnavbar  a:hover {
   transition: 0.1s;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
 }
 
 .currentlink {
@@ -58,7 +58,7 @@
 }
 
 #bulb:hover {
-  filter: invert(0.8);
+  // filter: invert(0.8);
 }
 
 
