@@ -1,0 +1,35 @@
+<div class="block">
+  <div class="enterdiv">
+    <p>INSERISCI IL codice n°</p>
+    <input type="password" id="pwd" autocomplete="off" size="5" required autofocus>
+  </div>
+</div>
+
+<script>
+
+  String.prototype.hashCode = function() {
+    var hash = 0, i, chr;
+    if (this.length === 0) return hash;
+    for (i = 0; i < this.length; i++) {
+      chr   = this.charCodeAt(i);
+      hash  = ((hash << 5) - hash) + chr;
+      hash |= 0; // Convert to 32bit integer
+    }
+    return hash;
+  };
+
+  let rand = Math.floor(Math.random() * 10) + 1;
+  $(".enterdiv p").append(rand);
+
+  $(".enterdiv input").keypress(() => {
+    load();
+  });
+
+  let load = () => {
+    let key = 94834587;
+    let value = $("#pwd").val().hashCode();
+    if(key == value) {
+      $(".block").css("display", "none");
+    }
+  }
+</script>

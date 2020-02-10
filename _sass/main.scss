@@ -1,7 +1,7 @@
 // https://coolors.co/f6f6f4-e8eaea-48ff96-1f1f21-323235
 $white: #F4F4E1;
 $black: #111011;
-$special: #FF5757;
+$special: #6A74CE;
 
 @import "home";
 @import "navbar";
@@ -12,6 +12,7 @@ $special: #FF5757;
 @import "post";
 @import "window";
 @import "postscroll";
+@import "block";
 
 html * {
   transition: 0.3s;
