@@ -21,6 +21,7 @@
   let rand = Math.floor(Math.random() * 10) + 1;
   $(".enterdiv p").append(rand);
 
+
   $(".enterdiv input").keypress(() => {
     load();
   });
@@ -30,6 +31,11 @@
     let value = $("#pwd").val().hashCode();
     if(key == value) {
       $(".block").css("display", "none");
+      $("div").css({
+        filter: "blur(0)",
+      });
+      return true;
     }
+    return false;
   }
 </script>
