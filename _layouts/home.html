@@ -2,26 +2,16 @@
 <html>
 
 {% include head.html %}
-{% include block.html %}
 
-<body class="light">
+<body>
 
   {% include navbar.html %}
 
-  {% include heading.html title="Home" %}
+  {% include heading.html %}
 
-  <div id="divbody">
-    {% include postscroll.html type="blog" title="Ultimi post"%}
-    {% include postscroll.html type="projects" title="Ultimi progetti"%}
-  </div>
+  {% include projects.html %}
 
   {% include footer.html %}
-
-<script>
-  $("div").not(".block").not(".enterdiv").css({
-    filter: "blur(10px)",
-  });
-</script>
 
 </body>
 

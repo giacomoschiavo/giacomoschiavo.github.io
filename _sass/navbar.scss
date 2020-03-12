@@ -1,99 +1,25 @@
-#divnavbar {
-  // padding: 20px 0;
-  font-family: "Nunito";
+#navbar {
   position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
-  width: 100%;
-  z-index: 2;
-  letter-spacing: 1px;
-  text-align: left;
-  // opacity: 0.8;
-  // box-shadow: -5px 0 1px $white;
-}
-
-#divnavbar * {
-  user-select: none;
-}
-
-#menu {
-  margin: auto 0 auto auto;
+  z-index: 99;
+  background-color: $black;
   text-align: right;
-  margin: 23px 0;
+  padding: 15px 20px;
 }
 
-#divnavbar  a {
-  transition: 0.2s;
-  display: inline;
-  margin: 0 20px;
-  text-decoration: none;
-  padding: 5px;
-  user-select: none;
-  padding-bottom: 5px;
-  border-bottom: 3px solid transparent;
+.navbar-link {
+  transition: 0.5s;
+  padding: 5px 10px;
+  color: $white;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
 }
 
-#divnavbar  a:hover {
-  transition: 0.1s;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
-}
-
-.currentlink {
-  color: $special !important;
-  border-bottom: 3px solid $special !important;
-  border-radius: 0px !important;
-}
-
-#divnavbar .minvisible{
-  display: none;
-  margin: 0 30px;
-  text-align: right;
-  // float: right;
-  font-size: 30px;
-}
-
-#bulb {
-  float: left;
-  cursor: pointer;
-  padding: 20px;
-}
-
-#bulb:hover {
-  // filter: invert(0.8);
-}
-
-
-@media screen and (max-width: 700px) {
-  #divnavbar .minvisible{
-    display: block;
-  }
-
-  // .minvisible{
-  //   display: block;
-  // }
-
-  #divlinks {
-    display: none;
-  }
-
-  #divlinks a{
-    margin: 10px 30%;
-  }
-
-  #divlinks {
-    text-align: center;
-    flex-flow: column;
-    width: 100%;
-    margin: auto;
-  }
-
-  #menu {
-    margin: auto 0 auto auto;
-    text-align: center;
-    margin: 16px 0 0 0;
-  }
-
-  #menu:hover #divlinks {
-    display: flex;
-    // text-decoration: underline;
-  }
+.navbar-link:hover {
+  transition: 0.5s;
+  padding: 5px 20px;
+  border-bottom: 2px solid $special;
+  color: $special;
 }

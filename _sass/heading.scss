@@ -1,49 +1,25 @@
-#divheading {
-  height: 100%;
-  max-height: 100%;
-  // color: $white !important;
+#section-heading {
+  max-height: 100vh;
+  height: 100vh;
+  background-color: $black;
   position: relative;
-  font-family: "Nunito";
-  text-rendering: optimizeLegibility;
-}
-
-.headingbg {
-  height: 100%;
-  width: 100%;
-  // transform: scale(1.03);
-  filter: brightness(0.4);
-  object-fit: cover;
 }
 
 #heading {
   position: absolute;
+  font-size: 4.7vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: $white;
+  width: inherit;
   text-align: center;
-  font-size: 3.5vw;
 }
 
-#heading > h1 {
-  font-weight: 100;
-  padding: 0;
-  margin: 0;
-  letter-spacing: 2px;
-  user-select: none;
-  text-align: center;
-  // color: $white !important;
-    // transform: rotate(-30deg);
+#heading-title {
 }
 
-@media screen and (max-width: 700px) {
-  #heading > h1 {
-    font-size: 12vw;
-    letter-spacing: 0px;
-    // color: $white !important;
-      // transform: rotate(-30deg);
-  }
+#heading > sub {
+  font-size: 3vw;
 
-  .headingbg {
-    height: 100%;
-  }
 }
