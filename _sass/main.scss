@@ -3,16 +3,10 @@ $white: #F4F4E1;
 $black: #111011;
 $special: #6A74CE;
 
-@import "home";
 @import "navbar";
-@import "scrollbar";
 @import "footer";
 @import "heading";
-@import "archive";
-@import "post";
-@import "window";
-@import "postscroll";
-@import "block";
+@import "scrollbar";
 
 html * {
   transition: 0.3s;
