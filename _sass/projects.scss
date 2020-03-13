@@ -1,5 +1,105 @@
-#section-projects {
-  max-height: 100vh;
+#projects {
+  // height: 150vh;
+  max-height: 150vh;
+  background-color: $black;
+  padding: 20px;
+}
+
+#div-projects {
+  margin: 50px auto;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-gap: 5% 5%;
+  width: 80%;
   height: 100vh;
-  background-color: #222;
+}
+
+#projects-text {
+  padding: 5px 15px;
+  border-left: 10px solid $special;
+  border-radius: 10px;
+  color: $white;
+  margin: 20px auto;
+  font-size: 4.5vw;
+  text-align: center;
+  width: 50%;
+}
+
+.article-projects {
+  transition: 0.6s;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 10px $special;
+  // border-left: 10px solid $special;
+}
+
+.article-projects img {
+  transition: 0.8s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(0.2);
+  opacity: 1;
+}
+
+.article-projects:hover img {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.article-projects:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(7px);
+  box-shadow: 0 3px $special;
+}
+
+.hidden-div {
+  color: $white;
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.article-projects h6 {
+  font-size: 2vw;
+  margin: 5px;
+  text-align: center;
+}
+
+.article-projects a {
+  font-size: 2vw;
+  display: block;
+  text-align: center;
+  background-color: $special;
+  color: $white;
+  padding: 10px 15px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#projects-more {
+  text-align: center;
+  margin: auto;
+  width: 30%;
+}
+
+#projects-more a{
+  color: $white;
+  padding: 20px;
+  display: block;
+  border-radius: 10px;
+  background-color: $special;
+}
+
+#projects-more a:hover {
+  color: $special;
+  background-color: $white;
 }

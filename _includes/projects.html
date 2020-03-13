@@ -1,3 +1,19 @@
-<section id="section-projects">
-
+<section id="projects">
+  <h2 id="projects-text">Projects👨‍💻</h2>
+  <div id="div-projects">
+    {% for image in site.static_files %}
+    {% if image.path contains 'img/gallery' %}
+    <article class="article-projects">
+      <img src="{{site.baseurl}}{{image.path}}">
+      <div class="hidden-div">
+        <h6>Battle Of Heroes</h6>
+        <a href="#">Live demo</a>
+      </div>
+    </article>
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div id="projects-more">
+    <a href="https://giacomoschiavo.github.io/projects/" target="_blank">Show more projects</a>
+  </div>
 </section>
