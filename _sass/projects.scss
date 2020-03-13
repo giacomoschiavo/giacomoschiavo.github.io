@@ -9,8 +9,8 @@
   margin: 50px auto;
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-  grid-gap: 5% 5%;
-  width: 80%;
+  grid-gap: 10% 10%;
+  width: 70%;
   height: 100vh;
 }
 
@@ -20,7 +20,7 @@
   border-radius: 10px;
   color: $white;
   margin: 20px auto;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
   text-align: center;
   width: 50%;
 }
@@ -87,16 +87,17 @@
 
 #projects-more {
   text-align: center;
-  margin: auto;
+  margin: 40px auto;
   width: 30%;
 }
 
 #projects-more a{
-  color: $white;
+  color: $special;
+  font-size: 1.8vw;
   padding: 20px;
   display: block;
   border-radius: 10px;
-  background-color: $special;
+  background-color: $white;
 }
 
 #projects-more a:hover {
