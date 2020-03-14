@@ -18,3 +18,15 @@
   border-left: 18px solid $special;
   border-radius: 15px;
 }
+
+@media (max-width: 600px) {
+
+  #div-heading {
+    left: 50%;
+    font-size: 5vh;
+    border-left: 10px solid $special;
+    border-bottom: 0 solid $special;
+    border-radius: 10px;
+  }
+
+}

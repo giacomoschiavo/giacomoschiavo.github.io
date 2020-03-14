@@ -51,3 +51,19 @@
 .footer-link i {
   font-size: 3vw;
 }
+@media (max-width: 600px) {
+  #footer-title {
+    font-size: 4.5vh;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .footer-link {
+    font-size: 3vh;
+    width: 80%;
+  }
+
+  .footer-link i {
+    font-size: 3vh;
+  }
+}

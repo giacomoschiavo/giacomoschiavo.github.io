@@ -24,3 +24,10 @@
   box-shadow: 0 2px $special;
   transform: translateY(3px);
 }
+
+@media (max-width: 600px) {
+  #navbar {
+    display: none;
+  }
+
+}
