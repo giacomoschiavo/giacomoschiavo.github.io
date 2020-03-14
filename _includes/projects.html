@@ -1,16 +1,14 @@
 <section id="projects">
   <h2 id="projects-text">Projects👨‍💻</h2>
   <div id="div-projects">
-    {% for image in site.static_files %}
-    {% if image.path contains 'img/gallery' %}
+    {% for item in site.data.projects %}
     <article class="article-projects">
-      <img src="{{site.baseurl}}{{image.path}}">
+      <img src="{{item.thumbnail}}" alt="img-project">
       <div class="hidden-div">
-        <h6>Battle Of Heroes</h6>
-        <a href="#">Live demo</a>
+        <h6>{{item.name}}</h6>
+        <a href="{{item.link}}">Live demo🎮</a>
       </div>
     </article>
-    {% endif %}
     {% endfor %}
   </div>
   <div id="projects-more">

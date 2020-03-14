@@ -1,6 +1,5 @@
 #navbar {
   position: fixed;
-  left: 0;
   right: 0;
   top: 0;
   z-index: 99;
@@ -13,15 +12,15 @@
   transition: 0.5s;
   padding: 5px 10px;
   color: $white;
-  text-shadow: -0.9px 0.9px 1px rgba(0, 0, 0, 0.5), 0.9px 0.9px 1px rgba(0, 0, 0, 0.5), 0.9px -0.9px 1px rgba(0, 0, 0, 0.5), -0.9px -0.9px 1px rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  border-bottom: 2px solid transparent;
-  letter-spacing: 1px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 15px 5px;
+  box-shadow: 0 5px $special;
 }
 
 .navbar-link:hover {
   transition: 0.5s;
-  padding: 5px 20px;
-  border-bottom: 2px solid $special;
-  // color: $special;
+  box-shadow: 0 2px $special;
+  transform: translateY(3px);
 }
