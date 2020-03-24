@@ -1,7 +1,5 @@
 #heading {
-  max-height: 100vh;
   height: 100vh;
-  min-height: 100vh;
   background-color: $white;
   position: relative;
   border-radius: 0 0 20px 20px;
@@ -11,10 +9,10 @@
 #div-heading {
   animation: fadein 2s ease;
   position: absolute;
-  font-size: 4.5vw;
+  font-size: 3.2vw;
   padding: 10px 15px;
   top: 50%;
-  left: 35%;
+  left: 25%;
   transform: translate(-50%, -50%);
   color: $black;
   border-left: 18px solid $special;
@@ -44,6 +42,10 @@
   animation-delay: 0.4s;
 }
 @media (max-width: 600px) {
+  #heading {
+    height: 95vh;
+  }
+
   #div-heading {
     left: 50%;
     font-size: 5vh;
