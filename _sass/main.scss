@@ -1,24 +1,26 @@
 // https://coolors.co/f6f6f4-e8eaea-48ff96-1f1f21-323235
-$white: #F4F4FC;
+$white: #f4f4fc;
 $black: #141414;
-$special: #3D4B98;
+$special: #3d4b98;
 
 @import "navbar";
-@import "heading";
+@import "header";
 @import "projects";
 @import "footer";
 @import "scrollbar";
 
-html, body {
+html,
+body {
   margin: 0;
   scroll-behavior: smooth;
   font-family: "Sen", sans-serif;
   text-rendering: optimizeLegibility;
-  background: rgb(20,20,20);
-  background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(117,117,117,1) 100%);
+  background: $black;
+  // background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(117,117,117,1) 100%);
 }
 
-h1, p {
+h1,
+p {
   margin: 0;
 }
 
