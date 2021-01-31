@@ -1,97 +1,91 @@
 .projects {
   max-height: 150vh;
-  // background: $black;
   padding: 10px 20px;
-  // margin: -50px 20px;
-  // border-left: 15px;
-  // border-right: 15px;
-  // border-style: solid;
-  // border-image: linear-gradient(to left, .00C853, .B2FF59);
 }
 
-.div-projects {
+.projects-container {
   margin: 70px auto;
-  display: grid;
-  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-  grid-gap: 5vw 5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 60%;
   height: 100vh;
 }
 
-.projects-text {
+.projects-title {
   padding: 5px 15px;
-  // border-radius: 10px;
   color: $white;
   margin: 10px auto;
-  font-size: 4em;
+  font-size: 3rem;
   text-align: center;
-  width: 50%;
+  width: 35vw;
   box-shadow: 0 8px $special;
 }
 
-.article-projects {
-  transition: 0.6s;
+.project {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+  transition: 0.3s;
   position: relative;
   background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 20px;
+  border-radius: 30px;
   border: 5px solid $white;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-.article-projects:hover {
+.project:hover {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0);
-  border: 3px solid $special;
+  border-color: $special;
 }
 
-.article-projects img {
-  transition: 0.8s;
+.project-img {
+  transition: 0.3s;
   position: absolute;
   width: 100%;
   height: 100%;
-  min-height: 100%;
+  border-radius: 30px;
   object-fit: cover;
-  border-radius: 20px;
-  filter: brightness(0.4);
-  opacity: 1;
+  filter: brightness(0.5) grayscale(1);
 }
 
-.article-projects:hover img {
+.project:hover .project-img {
   // opacity: 0;
   transition: 0.5s;
   filter: brightness(0.5);
 }
 
-.article-projects:hover {
-  // background-color: rgba(0, 0, 0, 0.9);
-  // transform: translateY(7px);
-  transform: scale(1.05);
-  // box-shadow: 0 3px $special;
+.project:hover {
+  // transform: scale(1.01);
 }
 
-.hidden-div {
+.project-container {
   color: $white;
+  background-color: $special;
   transition: 0.5s;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 80%;
+  border-radius: 20px;
   transform: translate(-50%, -50%);
   opacity: 1;
 }
 
-.article-projects h6 {
+.project-title {
   text-align: center;
   font-size: 2vw;
-  margin: 5px;
-  background-color: $special;
-  color: $white;
+  margin: 0 0 5px 0;
+  background-color: $white;
+  color: $black;
   padding: 10px 15px;
   border-radius: 10px;
 }
 
-.article-projects a {
+.project-link {
   text-align: center;
-  color: $black;
+  color: $white;
   display: block;
   font-size: 2vw;
   margin: 20px;
@@ -118,30 +112,31 @@
   color: $white;
   background-color: $special;
 }
+
 @media (max-width: 600px) {
-  .projects-text {
+  .projects-title {
     font-size: 3.5vh;
     width: 75%;
   }
 
-  .div-projects {
+  .projects-container {
     display: flex;
     flex-direction: column;
     width: 95%;
     margin: 10px auto;
   }
 
-  .article-projects {
+  .project {
     flex: 1;
     margin: 20px auto;
     width: 100%;
   }
 
-  .article-projects h6 {
+  .project-title {
     font-size: 2.8vh;
   }
 
-  .article-projects a {
+  .project-link {
     font-size: 2vh;
   }
 
@@ -155,15 +150,15 @@
   }
 }
 @media (min-width: 600px) and (max-width: 1200px) {
-  .div-projects {
+  .projects-container {
     width: 90%;
   }
 
-  .article-projects h6 {
+  .project-title {
     font-size: 3.5vw;
   }
 
-  .article-projects a {
+  .project-link {
     font-size: 2.5vw;
   }
 

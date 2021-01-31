@@ -2,7 +2,7 @@ footer {
   // max-height: 70vh;
   // height: 70vh;
   margin-top: 20px;
-  background-color: $special;
+  background-color: $white;
   border-radius: 20px 20px 0 0;
   padding: 20px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
@@ -10,15 +10,20 @@ footer {
 
 .footer-title {
   margin: 0;
-  color: $white;
+  color: $black;
   font-size: 4.5vw;
   text-align: center;
   padding: 40px 20px;
+  padding-bottom: 0;
+  width: 45%;
+  margin: 0 auto;
+  border-bottom: 20px solid $special;
 }
 
 .footer-links {
-  width: 70%;
-  margin: auto;
+  width: 80%;
+  padding: 20px 0;
+  margin: 20px auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -32,20 +37,18 @@ footer {
   text-align: center;
   padding: 10px;
   margin: 10px 20px;
-  width: 20%;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  // width: 20%;
+  // border-radius: 10px;
+  border-bottom: 5px solid transparent;
+  // box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   background-color: $white;
   color: $black;
-  border-left: 10px solid $black;
 }
 
 .footer-link:hover {
-  color: $white;
-  border-left: 10px solid $white;
-  background-color: $black;
   transition: 0.5s;
-  transform: scale(1.1);
+  border-bottom: 5px solid $special;
+  transform: translateY(3px);
 }
 
 .footer-link i {

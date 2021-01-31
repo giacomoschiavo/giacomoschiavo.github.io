@@ -1,12 +1,14 @@
 <section class="projects" id="projects-section">
-  <h2 class="projects-text">Projects👨‍💻</h2>
-  <div class="div-projects">
+  <h2 class="projects-title">Projects👨‍💻</h2>
+  <div class="projects-container">
     {% for item in site.data.projects %}
-    <article class="article-projects">
-      <img src="{{item.thumbnail}}" alt="img-project" />
-      <div class="hidden-div">
-        <h6>{{item.name}}</h6>
-        <a href="{{item.link}}">Try it!😁</a>
+    <article class="project">
+      <img src="{{item.thumbnail}}" class="project-img" alt="img-project" />
+      <div class="project-container">
+        <h6 class="project-title">{{item.name}}</h6>
+        <div class="project-link-container">
+          <a class="project-link" href="{{item.link}}">Try it!😁</a>
+        </div>
       </div>
     </article>
     {% endfor %}

@@ -12,11 +12,12 @@ nav {
   color: $black;
   display: block;
   margin: 10px 15px;
+  border-bottom: 2px solid transparent;
 }
 
 .navbar-link:hover {
   transition: 0.5s;
-  box-shadow: 0 2px $special;
+  border-bottom: 2px solid $special;
   transform: translateY(3px);
 }
 

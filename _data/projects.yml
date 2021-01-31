@@ -1,6 +1,3 @@
-- name: "Corona Tracker🦠"
-  link: "https://giacomoschiavo.github.io/projects/coronatracker/"
-  thumbnail: "assets/img/gallery/coronatracker.png"
 - name: "KNN Classifier🤖"
   link: "https://giacomoschiavo.github.io/projects/KNN-classifier-tf/"
   thumbnail: "assets/img/gallery/knn.png"
