@@ -1,5 +1,9 @@
 <section class="projects" id="projects-section">
-  <h2 class="projects-title">Projects👨‍💻</h2>
+  <div class="projects-title-container">
+    <p class="header-big">These are my</p>
+    <p class="header-little">Projects</p>
+    <!-- <p class="header-sub">or what I tried to do xd</p> -->
+  </div>
   <div class="projects-container">
     {% for item in site.data.projects %}
     <article class="project">
@@ -13,9 +17,9 @@
     </article>
     {% endfor %}
   </div>
-  <div class="projects-more">
+  <!-- <div class="projects-more">
     <a href="https://giacomoschiavo.github.io/projects/" target="_blank"
       >Show more projects📂</a
     >
-  </div>
+  </div> -->
 </section>

@@ -1,6 +1,9 @@
 .projects {
   max-height: 150vh;
   padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .projects-container {
@@ -13,14 +16,17 @@
   height: 100vh;
 }
 
-.projects-title {
+.projects-title-container {
   padding: 5px 15px;
   color: $white;
   margin: 10px auto;
   font-size: 3rem;
   text-align: center;
   width: 35vw;
-  box-shadow: 0 8px $special;
+}
+
+.projects-title-container .header-big {
+  font-size: 4vw;
 }
 
 .project {
