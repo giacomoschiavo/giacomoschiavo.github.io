@@ -1,51 +1,43 @@
 .projects {
   max-height: 150vh;
   padding: 10px 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 100vh;
-  // justify-content: center;
-}
-
-.projects-title-container {
-  align-self: center;
-  flex: 3;
-  padding: 5px 15px;
-  color: $white;
-  // margin: auto 20px;
-  text-align: center;
-}
-
-.projects-title-container .header-big {
-  font-size: 4vw;
 }
 
 .projects-container {
-  align-self: center;
-  flex: 2;
-  // margin: 70px auto;
+  margin: 70px auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 70%;
+  width: 60%;
+  height: 100vh;
+}
+
+.projects-title {
+  padding: 5px 15px;
+  color: $white;
+  margin: 10px auto;
+  font-size: 3rem;
+  text-align: center;
+  width: 35vw;
+  box-shadow: 0 8px $special;
 }
 
 .project {
   flex: 1;
-  // min-width: 300px;
-  // margin: 10px;
+  min-width: 300px;
+  margin: 10px;
   transition: 0.3s;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 30px;
-  // box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-  border: 5px solid $transparent;
+  border: 5px solid $white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .project:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-  border: 5px solid $white;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0);
+  border-color: $special;
 }
 
 .project-img {
@@ -70,6 +62,7 @@
 
 .project-container {
   color: $white;
+  background-color: $special;
   transition: 0.5s;
   position: absolute;
   top: 50%;
@@ -84,9 +77,10 @@
   text-align: center;
   font-size: 2vw;
   margin: 0 0 5px 0;
-  color: $white;
+  background-color: $white;
+  color: $black;
   padding: 10px 15px;
-  // border-radius: 10px;
+  border-radius: 10px;
 }
 
 .project-link {
@@ -139,7 +133,7 @@
   }
 
   .project-title {
-    font-size: 2.8vw;
+    font-size: 2.8vh;
   }
 
   .project-link {
