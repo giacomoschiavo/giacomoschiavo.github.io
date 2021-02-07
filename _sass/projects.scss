@@ -31,8 +31,8 @@
   position: relative;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 30px;
-  border: 5px solid $white;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  border: 5px solid $special;
+  // box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .project:hover {
@@ -62,7 +62,7 @@
 
 .project-container {
   color: $white;
-  background-color: $special;
+  background-color: $black;
   transition: 0.5s;
   position: absolute;
   top: 50%;
@@ -77,15 +77,14 @@
   text-align: center;
   font-size: 2vw;
   margin: 0 0 5px 0;
-  background-color: $white;
-  color: $black;
   padding: 10px 15px;
   border-radius: 10px;
+  color: $white;
 }
 
 .project-link {
-  text-align: center;
   color: $white;
+  text-align: center;
   display: block;
   font-size: 2vw;
   margin: 20px;
