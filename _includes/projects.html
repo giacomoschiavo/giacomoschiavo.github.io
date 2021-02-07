@@ -7,19 +7,19 @@
   <div class="projects-container">
     {% for item in site.data.projects %}
     <article class="project">
-      <img src="{{item.thumbnail}}" class="project-img" alt="img-project" />
+      <!-- <img src="{{item.thumbnail}}" class="project-img" alt="img-project" /> -->
       <div class="project-container">
-        <h6 class="project-title">{{item.name}}</h6>
-        <div class="project-link-container">
-          <a class="project-link" href="{{item.link}}">Try it!😁</a>
-        </div>
+        <!-- <h6 class="project-title">{{item.name}}</h6> -->
+        <a class="project-title" href="{{item.link}}">{{item.name}}</a>
+        <!-- <div class="project-link-container">
+        </div> -->
       </div>
     </article>
     {% endfor %}
+    <div class="projects-more">
+      <a href="https://giacomoschiavo.github.io/projects/" target="_blank"
+        >Show more projects📂</a
+      >
+    </div>
   </div>
-  <!-- <div class="projects-more">
-    <a href="https://giacomoschiavo.github.io/projects/" target="_blank"
-      >Show more projects📂</a
-    >
-  </div> -->
 </section>

@@ -4,46 +4,48 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.projects-container {
-  margin: 70px auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 60%;
   height: 100vh;
+  // justify-content: center;
 }
 
 .projects-title-container {
+  align-self: center;
+  flex: 3;
   padding: 5px 15px;
   color: $white;
-  margin: 10px auto;
-  font-size: 3rem;
+  // margin: auto 20px;
   text-align: center;
-  width: 35vw;
 }
 
 .projects-title-container .header-big {
   font-size: 4vw;
 }
 
+.projects-container {
+  align-self: center;
+  flex: 2;
+  // margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 70%;
+}
+
 .project {
   flex: 1;
-  min-width: 300px;
-  margin: 10px;
+  // min-width: 300px;
+  // margin: 10px;
   transition: 0.3s;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 30px;
-  border: 5px solid $white;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  // box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  border: 5px solid $transparent;
 }
 
 .project:hover {
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0);
-  border-color: $special;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 5px solid $white;
 }
 
 .project-img {
@@ -68,7 +70,6 @@
 
 .project-container {
   color: $white;
-  background-color: $special;
   transition: 0.5s;
   position: absolute;
   top: 50%;
@@ -83,10 +84,9 @@
   text-align: center;
   font-size: 2vw;
   margin: 0 0 5px 0;
-  background-color: $white;
-  color: $black;
+  color: $white;
   padding: 10px 15px;
-  border-radius: 10px;
+  // border-radius: 10px;
 }
 
 .project-link {
@@ -139,7 +139,7 @@
   }
 
   .project-title {
-    font-size: 2.8vh;
+    font-size: 2.8vw;
   }
 
   .project-link {
